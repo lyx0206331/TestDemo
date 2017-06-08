@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestDemo</string>
+
+    <string name="grid_example">Grid Example</string>
+</resources>
