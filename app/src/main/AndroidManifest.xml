@@ -38,9 +38,10 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".gifplay.GifPlayActivity" />
         <activity android:name=".gifplay.GridViewActivity" />
+        <activity android:name=".activities.WaveViewActivity" />
         <activity
-            android:name=".activities.WaveViewActivity"
-            android:screenOrientation="landscape" />
+            android:name=".activities.TottieAnimActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="main"
+            type="com.adrian.testdemo.activities.MainActivity.Main" />
+    </data>
+
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.adrian.testdemo.activities.MainActivity">
@@ -16,21 +25,32 @@
             android:id="@+id/btn_ear_key"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test_ear_key" />
+            android:text="test_ear_key"
+            android:onClick="@{main.clickEarKey}" />
         <Button
             android:id="@+id/btn_test_cofig"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test phone configuration"/>
+            android:text="test phone configuration"
+            android:onClick="@{main.clickTestConfig}" />
         <Button
             android:id="@+id/btn_test_gif"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test gif"/>
+            android:text="test gif"
+            android:onClick="@{main.clickTestGif}" />
         <Button
             android:id="@+id/btn_test_wave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test wave"/>
+            android:text="test wave"
+            android:onClick="@{main.clickTestWave}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tottie anim"
+            android:onClick="@{main.clickTottieAnim}" />
     </LinearLayout>
 </ScrollView>
+</layout>
