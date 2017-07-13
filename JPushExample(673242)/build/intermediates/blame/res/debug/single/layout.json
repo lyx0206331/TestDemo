@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_webview_layout.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\jpush_webview_layout.xml"
+    },
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\jpush_popwin_layout.xml"
+    },
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\set_push_time.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\set_push_time.xml"
+    },
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\push_set_dialog.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\push_set_dialog.xml"
+    },
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\customer_notitfication_layout.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\customer_notitfication_layout.xml"
+    },
+    {
+        "merged": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\build\\intermediates\\res\\merged\\debug\\layout\\customer_notitfication_layout_one.xml",
+        "source": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\layout\\customer_notitfication_layout_one.xml"
+    }
+]
