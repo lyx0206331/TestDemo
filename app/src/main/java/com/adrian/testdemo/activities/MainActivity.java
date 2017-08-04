@@ -3,6 +3,7 @@ package com.adrian.testdemo.activities;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 import com.adrian.testdemo.R;
 import com.adrian.testdemo.databinding.ActivityMainBinding;
 import com.adrian.testdemo.gifplay.GifPlayActivity;
+import com.adrian.testdemo.tools.CommUtil;
 import com.adrian.testdemo.tools.ConfigTestUtil;
 
 public class MainActivity extends BaseActivity {
@@ -38,7 +40,15 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void loadData() {
-
+        byte[] mac = new byte[6];
+        mac[0] = (byte) 0x80;
+        mac[1] = 0x67;
+        mac[2] = (byte) 0xFF;
+        mac[3] = (byte) 0xEE;
+        mac[4] = (byte) 0xAB;
+        mac[5] = (byte) 0x66;
+        mac = Base64.encode(mac, Base64.DEFAULT);
+        CommUtil.logE("BASE64", "http://www.iwhere.com/0/" + new String(mac));
     }
 
     @Override
