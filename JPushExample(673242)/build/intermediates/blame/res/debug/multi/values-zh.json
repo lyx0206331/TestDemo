@@ -11,7 +11,14 @@
                     "endOffset": 141
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 274,
+                        "endColumn": 90,
+                        "endOffset": 360
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 193
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 51,
+                        "endOffset": 156
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 261
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 495,
+                        "endColumn": 67,
+                        "endOffset": 558
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 344
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 689,
+                        "endColumn": 82,
+                        "endOffset": 767
+                    }
                 }
             },
             {
@@ -59,7 +87,14 @@
                     "endOffset": 412
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 427,
+                        "endColumn": 67,
+                        "endOffset": 490
+                    }
                 }
             },
             {
@@ -71,7 +106,14 @@
                     "endOffset": 476
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 563,
+                        "endColumn": 63,
+                        "endOffset": 622
+                    }
                 }
             },
             {
@@ -83,7 +125,14 @@
                     "endOffset": 538
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 627,
+                        "endColumn": 61,
+                        "endOffset": 684
+                    }
                 }
             },
             {
@@ -95,7 +144,14 @@
                     "endOffset": 592
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
                 }
             },
             {
@@ -107,7 +163,14 @@
                     "endOffset": 668
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 772,
+                        "endColumn": 75,
+                        "endOffset": 843
+                    }
                 }
             },
             {
@@ -119,7 +182,14 @@
                     "endOffset": 722
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 848,
+                        "endColumn": 53,
+                        "endOffset": 897
+                    }
                 }
             },
             {
@@ -131,7 +201,14 @@
                     "endOffset": 784
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 365,
+                        "endColumn": 61,
+                        "endOffset": 422
+                    }
                 }
             },
             {
@@ -143,7 +220,14 @@
                     "endOffset": 897
                 },
                 "from": {
-                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml"
+                    "file": "E:\\Android\\StudioProjects\\TestDemo\\JPushExample(673242)\\res\\values-zh\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 112,
+                        "endOffset": 269
+                    }
                 }
             },
             {

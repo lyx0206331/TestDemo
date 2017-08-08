@@ -11,46 +11,55 @@
     </data>
 
     <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.adrian.testdemo.activities.MainActivity">
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
-        android:orientation="vertical">
+        tools:context="com.adrian.testdemo.activities.MainActivity">
 
-        <Button
-            android:id="@+id/btn_ear_key"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="test_ear_key"
-            android:onClick="@{main.clickEarKey}" />
-        <Button
-            android:id="@+id/btn_test_cofig"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="test phone configuration"
-            android:onClick="@{main.clickTestConfig}" />
-        <Button
-            android:id="@+id/btn_test_gif"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="test gif"
-            android:onClick="@{main.clickTestGif}" />
-        <Button
-            android:id="@+id/btn_test_wave"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="test wave"
-            android:onClick="@{main.clickTestWave}" />
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="tottie anim"
-            android:onClick="@{main.clickTottieAnim}" />
-    </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/btn_ear_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickEarKey}"
+                android:text="test_ear_key" />
+
+            <Button
+                android:id="@+id/btn_test_cofig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickTestConfig}"
+                android:text="test phone configuration" />
+
+            <Button
+                android:id="@+id/btn_test_gif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickTestGif}"
+                android:text="test gif" />
+
+            <Button
+                android:id="@+id/btn_test_wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickTestWave}"
+                android:text="test wave" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickTottieAnim}"
+                android:text="tottie anim" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickSensorTest}"
+                android:text="传感器测试" />
+        </LinearLayout>
+    </ScrollView>
 </layout>

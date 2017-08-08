@@ -1,8 +1,10 @@
 package com.adrian.testdemo.activities;
 
+import android.Manifest;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +16,12 @@ import com.adrian.testdemo.gifplay.GifPlayActivity;
 import com.adrian.testdemo.tools.CommUtil;
 import com.adrian.testdemo.tools.ConfigTestUtil;
 
+import permissions.dispatcher.NeedsPermission;
+import permissions.dispatcher.OnShowRationale;
+import permissions.dispatcher.PermissionRequest;
+import permissions.dispatcher.RuntimePermissions;
+
+@RuntimePermissions
 public class MainActivity extends BaseActivity {
 
     private Button mEarKeyBtn;
@@ -36,6 +44,7 @@ public class MainActivity extends BaseActivity {
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         Main main = new Main();
         binding.setMain(main);
+
     }
 
     @Override
@@ -54,6 +63,21 @@ public class MainActivity extends BaseActivity {
     @Override
     protected int getLayoutResId() {
         return R.layout.activity_main;
+    }
+
+    @NeedsPermission({Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE})
+    void MyNeedsPermission() {
+        startActivity(SensorDataActivity.class);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
+    }
+
+    @OnShowRationale({Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE})
+    void MyOnShowRationale(final PermissionRequest request) {
     }
 
     public class Main {
@@ -75,6 +99,10 @@ public class MainActivity extends BaseActivity {
 
         public void clickTottieAnim(View view) {
             startActivity(TottieAnimActivity.class);
+        }
+
+        public void clickSensorTest(View view) {
+            MainActivityPermissionsDispatcher.MyNeedsPermissionWithCheck(MainActivity.this);
         }
     }
 }

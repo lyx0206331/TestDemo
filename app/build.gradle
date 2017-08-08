@@ -50,4 +50,10 @@ dependencies {
     compile 'com.gplibs:magic-surface-view:1.1.1'
     compile 'com.airbnb.android:lottie:2.0.0'
     testCompile 'junit:junit:4.12'
+
+    compile("com.github.hotchemi:permissionsdispatcher:2.4.0") {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:2.4.0"
 }
