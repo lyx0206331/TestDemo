@@ -60,6 +60,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{main.clickSensorTest}"
                 android:text="传感器测试" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickPullParseXml}"
+                android:text="Pull解析XML" />
         </LinearLayout>
     </ScrollView>
 </layout>

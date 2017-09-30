@@ -55,6 +55,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
@@ -1725,5 +1726,30 @@ public class CommUtil {
         String imsi = mTelephonyMgr.getSubscriberId();
 
         return imsi;
+    }
+
+    /**
+     * 追加写入
+     *
+     * @param dir
+     * @param fileName
+     * @param content
+     */
+    public static void append2File(String dir, String fileName, String content) {
+        BufferedWriter bw = null;
+        File file = new File(dir);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+        try {
+            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file.getAbsolutePath() + "/" + fileName, true)));
+            bw.write(content);
+            bw.flush();
+            bw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

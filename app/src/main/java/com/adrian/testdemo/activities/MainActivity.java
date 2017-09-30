@@ -49,15 +49,15 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void loadData() {
-        byte[] mac = new byte[6];
-        mac[0] = (byte) 0x80;
-        mac[1] = 0x67;
-        mac[2] = (byte) 0xFF;
-        mac[3] = (byte) 0xEE;
-        mac[4] = (byte) 0xAB;
-        mac[5] = (byte) 0x66;
-        mac = Base64.encode(mac, Base64.DEFAULT);
-        CommUtil.logE("BASE64", "http://www.iwhere.com/0/" + new String(mac));
+//        byte[] mac = new byte[6];
+//        mac[0] = (byte) 0x80;
+//        mac[1] = 0x67;
+//        mac[2] = (byte) 0xFF;
+//        mac[3] = (byte) 0xEE;
+//        mac[4] = (byte) 0xAB;
+//        mac[5] = (byte) 0x66;
+//        mac = Base64.encode(mac, Base64.DEFAULT);
+//        CommUtil.logE("BASE64", "http://www.iwhere.com/0/" + new String(mac));
     }
 
     @Override
@@ -103,6 +103,10 @@ public class MainActivity extends BaseActivity {
 
         public void clickSensorTest(View view) {
             MainActivityPermissionsDispatcher.MyNeedsPermissionWithCheck(MainActivity.this);
+        }
+
+        public void clickPullParseXml(View view) {
+            startActivity(PullParseXmlActivity.class);
         }
     }
 }

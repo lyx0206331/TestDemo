@@ -13,7 +13,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -51,7 +50,8 @@
         <activity
             android:name=".activities.TottieAnimActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".activities.SensorDataActivity"></activity>
+        <activity android:name=".activities.SensorDataActivity" />
+        <activity android:name=".activities.PullParseXmlActivity"></activity>
     </application>
 
 </manifest>
