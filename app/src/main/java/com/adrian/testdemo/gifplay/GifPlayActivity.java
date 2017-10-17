@@ -11,9 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.gifviewlib.GifImageView;
 import com.adrian.testdemo.R;
-import com.adrian.testdemo.activities.BaseActivity;
 
 public class GifPlayActivity extends BaseActivity implements View.OnClickListener {
 

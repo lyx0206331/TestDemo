@@ -1,6 +1,5 @@
 package com.adrian.testdemo.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -8,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.testdemo.R;
 
 public class EarKeyActivity extends BaseActivity implements View.OnClickListener {

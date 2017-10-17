@@ -2,20 +2,15 @@ package com.adrian.testdemo.activities;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.util.TypedValue;
 
+import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.testdemo.R;
 import com.adrian.testdemo.adapters.ConfigListAdapter;
 import com.adrian.testdemo.models.ConfigInfo;
 import com.adrian.testdemo.tools.ConfigTestUtil;
-import com.adrian.testdemo.views.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

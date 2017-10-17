@@ -1,20 +1,16 @@
 package com.adrian.testdemo.activities;
 
 import android.Manifest;
-import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
+import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.testdemo.R;
 import com.adrian.testdemo.databinding.ActivityMainBinding;
 import com.adrian.testdemo.gifplay.GifPlayActivity;
-import com.adrian.testdemo.tools.CommUtil;
-import com.adrian.testdemo.tools.ConfigTestUtil;
 
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.OnShowRationale;

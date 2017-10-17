@@ -4,8 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
 
+import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.testdemo.R;
-import com.adrian.testdemo.activities.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;

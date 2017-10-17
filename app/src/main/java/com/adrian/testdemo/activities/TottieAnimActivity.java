@@ -1,18 +1,9 @@
 package com.adrian.testdemo.activities;
 
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
+import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.testdemo.R;
-import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieComposition;
-import com.airbnb.lottie.LottieDrawable;
-import com.airbnb.lottie.OnCompositionLoadedListener;
-
-import static java.security.AccessController.getContext;
 
 public class TottieAnimActivity extends BaseActivity {
 

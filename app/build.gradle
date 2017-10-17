@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.adrian.testdemo"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -37,23 +37,22 @@ dependencies {
     })
     //    compile 'com.felipecsl:gifimageview:2.1.0'
     compile project(':gifviewlib')
-    //    compile 'com.android.support:animated-vector-drawable:25.3.1'
+//        compile 'com.android.support:animated-vector-drawable:26.+'
     //    compile 'com.android.support:renderscript:25.0.2'
     compile project(':wavesview')
-
-
-    compile("com.github.hotchemi:permissionsdispatcher:2.4.0") {
+    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
         // if you don't use android.app.Fragment you can exclude support for them
         exclude module: "support-v13"
     }
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:recyclerview-v7:26.+'
     compile 'com.squareup.okhttp:okhttp:2.7.4'
     compile 'commons-io:commons-io:2.4'
     compile 'com.gplibs:magic-surface-view:1.1.1'
     compile 'com.airbnb.android:lottie:2.0.0'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+    compile project(':basemodule')
 }

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JPushExample(673242)/JPushExample(673242).iml" filepath="$PROJECT_DIR$/JPushExample(673242)/JPushExample(673242).iml" />
       <module fileurl="file://$PROJECT_DIR$/TestDemo.iml" filepath="$PROJECT_DIR$/TestDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basemodule/basemodule.iml" filepath="$PROJECT_DIR$/basemodule/basemodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/gifviewlib/gifviewlib.iml" filepath="$PROJECT_DIR$/gifviewlib/gifviewlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/wavesview/wavesview.iml" filepath="$PROJECT_DIR$/wavesview/wavesview.iml" />
     </modules>

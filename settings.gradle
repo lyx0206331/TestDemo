@@ -1,1 +1,1 @@
-include ':app', ':gifviewlib', ':wavesview', ':JPushExample(673242)'
+include ':app', ':gifviewlib', ':wavesview', ':JPushExample(673242)', ':basemodule'
