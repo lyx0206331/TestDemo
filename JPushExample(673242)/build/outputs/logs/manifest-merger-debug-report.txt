@@ -1,18 +1,22 @@
 -- Merging decision tree log ---
 manifest
 ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:1-178:12
+INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:1-178:12
+INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:1-178:12
+INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:1-178:12
+INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:1-178:12
 	package
 		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:3:5-33
 	android:versionName
 		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:5:5-32
 		INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml
 		INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:4:5-30
 		INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml
 		INJECTED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml
-	xmlns:android
-		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
@@ -105,10 +109,10 @@ application
 ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:40:5-177:19
 	android:label
 		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:43:9-41
-	android:allowBackup
-		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:42:9-36
 	android:icon
 		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:41:9-45
+	android:allowBackup
+		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:42:9-36
 	android:name
 		ADDED from E:\Android\StudioProjects\TestDemo\JPushExample(673242)\AndroidManifest.xml:44:9-64
 activity#com.example.jpushdemo.MainActivity
