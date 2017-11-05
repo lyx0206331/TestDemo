@@ -99,6 +99,27 @@ public abstract class BaseActivity extends AppCompatActivity {
         ActivityManager.getInstance().removeActivity(this);
     }
 
+    protected boolean isVisible(View view) {
+        if (view.getVisibility() == View.VISIBLE) {
+            return true;
+        }
+        return false;
+    }
+
+    protected boolean isInvisible(View view) {
+        if (view.getVisibility() == View.INVISIBLE) {
+            return true;
+        }
+        return false;
+    }
+
+    protected boolean isGone(View view) {
+        if (view.getVisibility() == View.GONE) {
+            return true;
+        }
+        return false;
+    }
+
     /**
      * 发起请求。
      *
