@@ -7,6 +7,9 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -14,6 +17,12 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--二维码扫描-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
@@ -50,7 +59,9 @@
             android:name=".activities.TottieAnimActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".activities.SensorDataActivity" />
-        <activity android:name=".activities.PullParseXmlActivity"></activity>
+        <activity android:name=".activities.PullParseXmlActivity" />
+        <activity android:name=".fast_ble.BleTestActivity" />
+        <activity android:name=".qr_scan.QrScanActivity"></activity>
     </application>
 
 </manifest>

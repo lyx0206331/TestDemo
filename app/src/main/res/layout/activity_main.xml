@@ -66,6 +66,18 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{main.clickPullParseXml}"
                 android:text="Pull解析XML" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickQrScan}"
+                android:text="二维码扫描" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{main.clickBleTest}"
+                android:text="BLE测试" />
         </LinearLayout>
     </ScrollView>
 </layout>

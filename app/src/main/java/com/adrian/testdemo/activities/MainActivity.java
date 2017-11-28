@@ -9,8 +9,10 @@ import android.widget.Button;
 
 import com.adrian.basemodule.activitiy.BaseActivity;
 import com.adrian.testdemo.R;
+import com.adrian.testdemo.fast_ble.BleTestActivity;
 import com.adrian.testdemo.databinding.ActivityMainBinding;
 import com.adrian.testdemo.gifplay.GifPlayActivity;
+import com.adrian.testdemo.qr_scan.QrScanActivity;
 
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.OnShowRationale;
@@ -24,6 +26,8 @@ public class MainActivity extends BaseActivity {
     private Button mPhoneCofigBtn;
     private Button mTestGifBtn;
     private Button mTestWaveBtn;
+    private Button mQRScanBtn;
+    private Button mBleTestBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +107,14 @@ public class MainActivity extends BaseActivity {
 
         public void clickPullParseXml(View view) {
             startActivity(PullParseXmlActivity.class);
+        }
+
+        public void clickQrScan(View view) {
+            startActivity(QrScanActivity.class);
+        }
+
+        public void clickBleTest(View view) {
+            startActivity(BleTestActivity.class);
         }
     }
 }
