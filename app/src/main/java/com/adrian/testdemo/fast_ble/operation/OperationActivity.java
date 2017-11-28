@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
 
 import com.adrian.testdemo.R;
 import com.adrian.testdemo.fast_ble.comm.Observer;
@@ -28,7 +29,7 @@ public class OperationActivity extends AppCompatActivity implements Observer {
     private BluetoothGattCharacteristic characteristic;
     private int charaProp;
 
-    private Toolbar toolbar;
+    //    private Toolbar toolbar;
     private List<Fragment> fragments = new ArrayList<>();
     private int currentPage = 0;
     private String[] titles = new String[3];
@@ -36,8 +37,7 @@ public class OperationActivity extends AppCompatActivity implements Observer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_operation);
+        setContentView(R.layout.ble_activity_operation);
         initView();
         initData();
         initPage();
@@ -74,20 +74,20 @@ public class OperationActivity extends AppCompatActivity implements Observer {
     }
 
     private void initView() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (currentPage != 0) {
-                    currentPage--;
-                    changePage(currentPage);
-                } else {
-                    finish();
-                }
-            }
-        });
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (currentPage != 0) {
+//                    currentPage--;
+//                    changePage(currentPage);
+//                } else {
+//                    finish();
+//                }
+//            }
+//        });
     }
 
     private void initData() {
@@ -108,7 +108,7 @@ public class OperationActivity extends AppCompatActivity implements Observer {
 
     public void changePage(int page) {
         currentPage = page;
-        toolbar.setTitle(titles[page]);
+//        toolbar.setTitle(titles[page]);
         updateFragment(page);
         if (currentPage == 1) {
             ((CharacteristicListFragment) fragments.get(1)).showData();

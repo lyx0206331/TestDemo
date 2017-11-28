@@ -61,6 +61,7 @@
         <activity android:name=".activities.SensorDataActivity" />
         <activity android:name=".activities.PullParseXmlActivity" />
         <activity android:name=".fast_ble.BleTestActivity" />
+        <activity android:name=".fast_ble.operation.OperationActivity" />
         <activity android:name=".qr_scan.QrScanActivity"></activity>
     </application>
 

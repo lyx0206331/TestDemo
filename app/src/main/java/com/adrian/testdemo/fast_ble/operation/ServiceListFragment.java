@@ -30,7 +30,7 @@ public class ServiceListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_service_list, null);
+        View v = inflater.inflate(R.layout.ble_fragment_service_list, null);
         initView(v);
         showData();
         return v;
@@ -110,7 +110,7 @@ public class ServiceListFragment extends Fragment {
             if (convertView != null) {
                 holder = (ViewHolder) convertView.getTag();
             } else {
-                convertView = View.inflate(context, R.layout.adapter_service, null);
+                convertView = View.inflate(context, R.layout.ble_adapter_service, null);
                 holder = new ViewHolder();
                 convertView.setTag(holder);
                 holder.txt_title = (TextView) convertView.findViewById(R.id.txt_title);
