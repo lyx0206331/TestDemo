@@ -1,83 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
+        <import type="com.adrian.testdemo.models.ToolbarContent" />
+
+        <variable
+            name="toolbarContent"
+            type="ToolbarContent" />
 
         <variable
             name="main"
             type="com.adrian.testdemo.activities.MainActivity.Main" />
     </data>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.adrian.testdemo.activities.MainActivity">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            bind:content="@{toolbarContent}" />
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            android:orientation="vertical">
+            tools:context="com.adrian.testdemo.activities.MainActivity">
 
-            <Button
-                android:id="@+id/btn_ear_key"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickEarKey}"
-                android:text="test_ear_key" />
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_test_cofig"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickTestConfig}"
-                android:text="test phone configuration" />
+                <Button
+                    android:id="@+id/btn_ear_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickEarKey}"
+                    android:text="test_ear_key" />
 
-            <Button
-                android:id="@+id/btn_test_gif"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickTestGif}"
-                android:text="test gif" />
+                <Button
+                    android:id="@+id/btn_test_cofig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickTestConfig}"
+                    android:text="test phone configuration" />
 
-            <Button
-                android:id="@+id/btn_test_wave"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickTestWave}"
-                android:text="test wave" />
+                <Button
+                    android:id="@+id/btn_test_gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickTestGif}"
+                    android:text="test gif" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickTottieAnim}"
-                android:text="tottie anim" />
+                <Button
+                    android:id="@+id/btn_test_wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickTestWave}"
+                    android:text="test wave" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickSensorTest}"
-                android:text="传感器测试" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickTottieAnim}"
+                    android:text="tottie anim" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickPullParseXml}"
-                android:text="Pull解析XML" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickSensorTest}"
+                    android:text="传感器测试" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickQrScan}"
-                android:text="二维码扫描" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickPullParseXml}"
+                    android:text="Pull解析XML" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="@{main.clickBleTest}"
-                android:text="BLE测试" />
-        </LinearLayout>
-    </ScrollView>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickQrScan}"
+                    android:text="二维码扫描" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{main.clickBleTest}"
+                    android:text="BLE测试" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 </layout>

@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 import com.adrian.basemodule.activitiy.BaseActivity;
@@ -12,6 +13,7 @@ import com.adrian.testdemo.R;
 import com.adrian.testdemo.fast_ble.BleTestActivity;
 import com.adrian.testdemo.databinding.ActivityMainBinding;
 import com.adrian.testdemo.gifplay.GifPlayActivity;
+import com.adrian.testdemo.models.ToolbarContent;
 import com.adrian.testdemo.qr_scan.QrScanActivity;
 
 import permissions.dispatcher.NeedsPermission;
@@ -41,9 +43,14 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initViews() {
+//        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         Main main = new Main();
         binding.setMain(main);
+
+        ToolbarContent content = new ToolbarContent(getString(R.string.app_name), "Home page");
+        binding.setToolbarContent(content);
+        setSupportActionBar(binding.toolbar.toolbar);
 
     }
 

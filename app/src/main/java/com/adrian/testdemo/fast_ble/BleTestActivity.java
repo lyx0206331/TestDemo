@@ -76,8 +76,8 @@ public class BleTestActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     protected void initViews() {
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         setTitle("BLE Test");
 
         btn_scan = (Button) findViewById(R.id.btn_scan);
